@@ -1,0 +1,1044 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&family=Work+Sans:wght@400;500&display=swap');
+@import '_breakpoints';
+
+
+
+body{
+    margin:0px;
+    border:0px;
+    padding:0px; 
+    box-sizing:border-box;
+    overflow: visible !important;
+    
+}
+
+
+
+
+// nav bar start
+.main_nav {
+    padding: 10px 0px;
+
+
+
+    
+}
+ .navbar{
+
+
+    .navbar-toggler {
+        color: rgb(238, 0, 91)!important;       
+      }
+
+    .ncon_btn {
+        margin-left: 50px;
+    }
+   
+    // .navbar-collapse .ncon_btn {
+    //     margin-left: 0px;
+    //     margin-top: 10px;
+    // }
+
+
+    .navbar-collapse ul.navbar-nav {
+        margin-top: 10px;
+        color: #1e1e1e;
+    }
+
+
+    #navbarSupportedContent {
+        justify-content: center;
+    }
+   
+     a.nav-link {
+       color: rgb(12, 12, 12)!important;
+       text-transform: uppercase;
+       font-weight: 600;
+       padding: 0px 15px!important;
+   }
+    
+ a.nav-link:hover {
+       color: rgb(238, 0, 91)!important;
+       
+   }
+
+    a.nav-link.active{
+         color: rgb(238, 0, 91)!important;
+     }
+
+     a.btn_header {
+         background-color: #ffffff;
+         box-shadow: 0px 0px 5px 0px rgba(150, 150, 150, 0.5);
+         padding: 8px 20px;
+         color: rgb(238, 0, 91);
+         text-decoration: none;
+         font-family: 'Raleway';
+         text-transform: uppercase;
+         font-size: 14px;
+         font-weight: 600;
+     }
+
+     .ncon_btn{
+         svg.svg-inline--fa.fa-arrow-right.fa-w-14 {
+             margin-left: 8px;
+         }
+     }
+
+
+
+ }
+
+
+
+
+
+// nav bar end
+
+#hero{
+    position: relative;
+    width:100%;
+    height:800px;
+    overflow: hidden;
+@include small{}
+@include medium{
+    height:570px;
+}
+
+
+
+    .hero-heading{
+font-size:55px;
+font-family: raleway;
+font-weight: 700;
+
+//  responsive start
+@include small{
+    font-size: 43px;
+}
+@include medium{
+    font-size: 40px;
+}
+@include large{
+    font-size:55px;
+}
+
+
+//  responsive end
+
+
+
+    }
+}
+
+// 
+.hero_con{
+position: absolute;
+margin-top: 2%;
+
+.hero_container-text {
+    margin-top: 20%;
+
+.hero-heading{
+    color: #002864;
+}
+
+.hero-buttons{
+    //  responsive start
+@include small{
+    margin-bottom: 20px;
+}
+
+//  responsive end
+}
+
+
+// hero buttons start
+    .hero-buttons{
+        .btn-h1{
+text-decoration: none;
+text-transform: capitalize;
+margin-right: 30px;
+padding:10px 20px;
+background-color: rgb(238, 0, 91);
+border:none;
+border-radius: 25px;
+color:white;
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+font-family: 'Raleway';
+    font-weight: 600;
+
+@include small{
+
+}
+@include medium{}
+
+        }
+        .btn-h1::after{
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top:2px ;
+            right: -30px;
+            transition: 0.5s;
+        }
+    
+        .btn-h1:hover{
+            padding-right: 35px;
+        }
+
+        .btn-h1:hover:after{
+            opacity: 1;
+            right: 5px;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+    }
+// hero button 1st end
+
+// hero 2nd button start
+
+.btn-h2{
+    text-decoration:none;
+    text-transform:capitalize;
+    color: #002864;
+    font-weight:700;
+}
+.btn-h2:hover{
+    color:rgb(238, 0, 91);
+    transition: all 0.2s;
+}
+//  hero 2nd button end
+
+}
+.hero_container-right{
+    width:100%;
+    height:100%;
+    position:relative;  
+    overflow: hidden;
+@include small{    
+    margin-top: 20px;}
+
+    
+}
+.hero-illustation {
+    text-align: center;
+}
+
+
+
+
+    .hero-illustation img{
+        // height:520px;
+        // width:520px;
+        // object-fit:fill;
+        height:70%;
+        width:68%;        
+        object-fit:fill;
+        @include small{
+            margin-left: 35px;
+        }
+    }
+}
+
+
+
+
+
+
+// services start section
+
+.service{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+@include small{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@include medium{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+    .services_text-container {   
+        margin-top: 20px;
+    }
+
+.services_main-text{
+    color:#000360d9;
+    line-height: 53px;
+    opacity: 95%;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Work Sans',sans-serif;;
+    font-weight: 800;
+    margin-bottom: 28px;
+
+    @include small {
+        line-height: 42px;
+        font-size: 34px;
+        padding-left: 10px;
+     
+      }
+
+@include medium{
+    line-height: 39px;
+    font-size: 33px;
+   
+}
+
+ @include large{
+    color:#1f2287;
+    line-height: 53px;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Work Sans',sans-serif;;
+    font-weight: 800;
+    margin-bottom: 28px;
+    
+ }
+
+
+}
+
+a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #fb1f5a;
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: 600; 
+@include small{
+    margin-bottom: 20px;
+}
+
+
+
+}
+
+.services_card-contaier {
+
+    box-shadow: 0px 0px 7px 0px rgba(120,118,120,0.58);
+    padding: 30px 20px;  
+    height: 300px;
+    width: 330px;
+
+      @include small{
+        margin-top: 30px;
+        height: 299px;
+        width: 298px;
+          
+      }
+      @include medium{
+        padding: 2px;
+    height: 255px;
+    width: 224px;
+        
+      }
+      @include large{
+        padding: 30px 20px;  
+    height: 300px;
+    width: 330px;
+        
+      }
+
+
+
+    }
+    .services_card-text {
+        font-family: 'Work Sans';
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 28px;
+        line-height: 29px;
+        color: #1f2287;
+        margin-left: 15px;
+
+@include small{
+    
+}
+@include medium{
+    font-size: 22px;
+    line-height: 25px;
+}
+
+    }
+
+    .serives_icon {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 15px;
+
+@include small{
+    
+}
+
+@include medium{
+    margin-bottom: 13px;
+}
+
+    }
+    .services_card-para{
+        margin-left: 15px;
+
+@include medium{
+    padding-right: 5px;
+}
+
+    }
+
+   
+  
+
+
+
+}
+// services section end
+
+// about section start
+
+ .about{
+     margin-top:250px;
+     margin-bottom:250px; 
+    @include small{
+        margin-top: 200px;
+    margin-bottom: 167px;
+    }
+    @include medium{}
+
+    .about_illustration{
+         background-image:url('../img/about.png');
+         height:260px;
+         width:100%;
+         object-fit: cover;
+         text-align: center;
+         background-repeat: no-repeat;
+
+     @include small{
+         height:200px;
+         width:100%;
+    
+}
+     @include medium{
+         height:200px;
+         width:100%;
+         
+}
+     @include large{
+         height:300px;
+         width:100%;
+         
+}
+
+
+img.a_img {
+    
+            height: 100%;
+            @include small{              
+                    width: 100%;
+                    object-fit: contain;                
+            }
+
+            @include medium{}
+        }
+    }
+
+    .about_sub {
+         font-family: Work Sans;
+         font-size: 18px;
+         color: #fb1f5a;
+         text-transform: uppercase;
+         font-weight: 600;
+     }
+
+     h2.about_title {
+         font-family: work sans;
+         font-size: 40px;
+         font-weight: 800;
+         color: #1f2287;
+         text-transform:capitalize;
+         @include small{
+            font-size: 35px;
+            line-height: 35px;
+         }
+
+
+    }
+
+    p.about_para {
+         color: #6c6ead;
+         font-weight: 400;
+         padding-right: 50px;
+         margin-bottom:4px;
+         @include small{
+             padding-right:5px;
+         }
+     }
+
+
+ .about_text-con{
+
+    a.about_more{
+         text-decoration:none ;
+         text-transform:capitalize;
+         color:#1f2287;
+         font-weight: 700;
+     }
+     .fa-arrow-right.fa-w-14 {
+         color: #1f2287;
+         margin-left:5px;
+     }
+
+     .about_more:hover{
+         color:#fb1f5a;
+         transition: all 0.2s;
+     }
+     .fa-arrow-right.fa-w-14:hover {
+         color: #fb1f5a;
+         transition: all 0.2s;
+
+ }
+ }
+
+}
+
+
+// media query about section start
+
+
+.section.about{
+    margin-top:250px;
+    margin-bottom:250px; 
+  
+
+   .about_illustration{
+        background-image:url('../img/about.png');
+        height:260px;
+        width:100%;
+        object-fit: cover;
+        text-align: center;
+        background-repeat: no-repeat;
+        img {
+           height: 100%;
+       }
+   }
+
+   .about_sub {
+        font-family: Work Sans;
+        font-size: 18px;
+        color: #fb1f5a;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+   .about_title {
+        font-family: work sans;
+        font-size: 40px;
+        font-weight: 800;
+        color: #1f2287;
+        text-transform:capitalize;
+   }
+
+    .about_para {
+        color: #6c6ead;
+        font-weight: 400;
+        padding-right: 50px;
+    }
+
+
+.about_text-con{
+
+    .about_more{
+        text-decoration:none ;
+        text-transform:capitalize;
+        color:#1f2287;
+    }
+    .fa-arrow-right.fa-w-14 {
+        color: #1f2287;
+        margin-left:5px;
+    }
+
+    .about_more:hover{
+        color:#fb1f5a;
+        transition: all 0.2s;
+    }
+    .fa-arrow-right.fa-w-14:hover {
+        color: #fb1f5a;
+        transition: all 0.2s;
+
+}
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// portfolio section start
+
+
+section.gallary .col-md-12.col-sm-6 {
+    display: flex;
+}
+h2.gallary_heading {
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fb1f5a;
+}
+
+section.gallary.row{
+    @include medium{
+        display: flex;
+        justify-content: center;
+    }
+   
+}
+
+
+
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 280px;
+  }
+  .gallery {
+    width: 270px!important;
+    height: auto;
+}
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+
+
+// portfolio section end
+
+
+
+// blog section start
+
+  .blog{
+      margin-top:100px;
+   margin-bottom:100px;
+
+   .blog-sub{
+font-family: "raleway";
+font-size:17px;
+font-weight:800;
+color:#fb1f5a;
+text-transform: uppercase;
+   }
+.blog-title{
+    font-family: "raleway";
+    font-size:35px;
+    font-weight:600; 
+    text-transform: capitalize;
+   
+}
+
+.row{
+    margin-top:50px;
+    @include small{
+        margin-top: 14px;
+    }
+}
+
+   .col-md-4.col-sm-12 {
+    display: flex;
+    justify-content: center;
+   }
+
+
+     .blog_card{
+        width: 355px;
+        height: 296px;       
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0px 0px 7px 0px rgba(120,118,120,0.3);
+        padding: 40px 30px;
+
+@include small{
+    height: 268px;
+    margin-bottom: 35px;
+}
+
+@include medium{
+    height: 320px
+}
+@include large{
+    width: 355px;
+        height: 296px;       
+        background-color: rgb(250, 250, 250);
+        box-shadow: 0px 0px 7px 0px rgba(120,118,120,0.3);
+        padding: 40px 30px;
+}
+
+
+ .blog_title{
+   
+ font-family:'raleway';
+ font-size:17px;
+ font-weight:600;
+ color:#1f2287;
+ @include small{
+    font-size: 20px;
+}
+ }
+
+a{
+    text-decoration: none;
+    color:#1f2287;
+}
+
+ .blog_para{
+    color:#1f2287;
+    @include medium{
+        line-height: 22px;
+    }
+ }
+
+
+}
+    
+
+
+.blog_card:hover{
+    width: 355px;
+    height: 296px;
+   
+background-color: #fb1f5a;
+transition:all 0.2s;
+box-shadow: 0px 0px 7px 0px rgba(120,118,120,0.3);
+padding: 40px 30px;
+
+.blog_title{
+font-family:'raleway';
+font-size:17px;
+font-weight:600;
+color:white;
+}
+a{
+    color:white;
+}
+
+.blog_para{
+color:rgb(243, 243, 243);
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+//  blog section end
+
+// contact section start
+
+.contact{
+    margin-top:100px;
+    margin-bottom:150px;
+    @include small{
+        margin-bottom: 60px;
+    }
+
+.con_sub{
+    font-family: "raleway";
+font-size:17px;
+font-weight:800;
+color:#fb1f5a;
+text-transform: uppercase;
+}
+
+
+.con_main{
+    font-family: "raleway";
+    font-size:35px;
+    font-weight:600; 
+    text-transform: capitalize;
+}
+
+
+
+    .form_con {
+        text-align: center!important;
+    }
+
+
+.fmail{
+
+    width: 48%;
+    float: left;      
+    margin-top:10px;
+    margin-bottom: 30px;
+    @include small{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+#cmail{
+    width:100%;
+    border: none!important;
+    height: 45px;
+    background-color:rgb(234, 250, 241);
+    padding: 20px;
+}
+
+#cmail:focus{
+    background-color:rgb(219, 241, 228);
+}
+
+
+
+#cmail:focus-visible{
+    outline:none;
+}
+
+
+
+.fsub{
+    width: 48%;
+    float: right;
+    margin-top:10px;
+    margin-bottom: 30px;
+    @include small{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+#csub{
+    width:100%; 
+    border: none!important;
+    background-color:rgb(234, 250, 241);
+    height: 45px;
+    padding: 20px;
+}
+
+#csub:focus{
+    background-color:rgb(219, 241, 228);
+}
+
+#csub:focus-visible{
+    outline:none;
+}
+
+
+
+
+.fmess{
+
+width:100%;
+margin-top:10px;
+margin-bottom: 30px;
+height:100px;
+margin-bottom:100px;
+
+}
+#message{
+    width:100%;
+    height:100%;
+    border: none!important;
+    background-color:rgb(234, 250, 241);
+    padding: 20px;
+}
+
+#message:focus{
+    background-color:rgb(219, 241, 228);
+}
+
+#message:focus-visible {
+    outline: none;
+}
+
+.send_btn{
+    margin-top: 118px;
+    @include small{
+        margin-top: 170px;
+    }
+
+.send_mess-btn{
+    color:white;
+    background-color:#fb1f5a;
+    padding:10px 20px;
+    text-decoration:none;
+    text-transform:capitalize;
+    font-family:raleway;  
+    border-radius: 25px;  
+}
+
+.send_mess-btn:hover{
+    color:white;
+    background-color:#ee003f;
+    transition:all 0.2s;
+        
+}
+
+
+
+}
+}
+
+
+// contact section end
+
+
+
+
+
+// footer start section
+
+.footer{
+     height:300px;
+     width:100%;
+     background-color:#01043c;
+
+     .flogo{
+        color: rgb(158, 158, 158);
+    }
+
+     
+     .fmain_con{
+         margin-top:8%;
+         text-align: center;
+     }
+
+     
+     h1.fmain_heading {
+        font-family: 'Raleway';
+        color: white;
+        text-transform: uppercase;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    margin-top: 12px;
+
+@include small{
+    font-size: 29px;   
+    letter-spacing: 1px
+}
+@include large{
+    font-family: 'Raleway';
+    color: white;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+margin-top: 12px;
+}
+
+    }
+
+    ul.footerul{
+        @include small{
+            padding-left:0em;
+        }
+    }
+
+    .footerul .fnav {
+        display: inline-block;
+    }
+
+    .fnav{
+        a{
+            color:white;
+            text-decoration: none;
+            text-transform: capitalize;
+            margin: 12px;
+            @include small{
+                margin: 5px; 
+            }
+        }      
+        
+
+
+    }
+
+    
+    li.fsocial {
+        display: inline-block;     
+    }
+    li.fsocial a {
+        color: white;
+        padding: 5px 20px;
+        font-size: 22px;
+    }   
+    
+    li.fsocial a:hover {
+        color: #fb1f5a;
+        padding: 5px 20px;
+        font-size: 22px;
+    }  
+
+
+
+
+    p.copyright {
+        color: #b3b3b3;
+    }
+    p.copyright a {
+        color: #fb1f5a;
+        text-decoration: none;
+        
+    }
+    p.copyright a:hover {
+        color: black;
+        
+        
+    }
+
+
+
+
+ }
+
